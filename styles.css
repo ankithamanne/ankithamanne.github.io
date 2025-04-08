@@ -91,6 +91,8 @@ justify-items: center;
 width: 100%;
 height: auto;
 border-radius: 5px;
+margin: 10px auto;
+display: block;
 }
 .box3.clicked {
 border: 3px solid teal;
