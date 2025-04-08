@@ -1,10 +1,6 @@
 .container {
-  position: fixed;
+  position: relative;
   overflow: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   scroll-behavior: smooth;
   height: 100%;
 }
