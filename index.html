@@ -48,15 +48,16 @@
             <button>Button 2</button>
           </div>
           <div class="box">
-            <img src="1.png" /> 
+            <img src="1.png"/> 
           </div>
         </div>
       </div>
-
+      
       <div id="projects" class="row" style="background-color: lightcoral">
         <h1>Projects</h1>
-        <div style="display: flex">
+        <div class="projects-grid">
           <div class="box box3" style="background-color: bisque;">
+            <img src="online-store(2).png">
             <h3>Project 1</h3>
             <p>
                 Welcome to Our Online Store, your premier destination for a wide range of high-quality products at affordable prices!<br>
@@ -66,6 +67,7 @@
           </div>
 
           <div class="box box3" style="background-color: bisque;">
+            <img src="bank-2.jpg">
             <h3>Project 2</h3>
             <p>
              This is a web-based banking system with user authentication, allowing
@@ -77,6 +79,7 @@
           </div>
 
           <div class="box box3" style="background-color: bisque;">
+            <img src="mystore-1.png">
             <h3>Project 3</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -89,6 +92,7 @@
           </div>
 
           <div class="box box3" style="background-color: bisque;">
+            <img src="website.png">
             <h3>Project 4</h3>
             <p>
              A bank is a financial institution that is licensed to accept
@@ -97,8 +101,9 @@
                Website</a>
             </p>
           </div>
-
+           
            <div class="box box3" style="background-color: bisque;">
+            <img src="social media.jpg">
             <h3>Project 5</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -111,6 +116,7 @@
           </div>
 
            <div class="box box3" style="background-color: bisque;">
+            <img src="react-store.png">
             <h3>Project 6</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -210,5 +216,13 @@
       </div>
       <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
+    <script>
+      const boxes = document.querySelectorAll('.box3');
+      boxes.forEach(box => {
+        box.addEventListener('click', () => {
+          boxes.forEach(b => b.classList.remove('clicked'));
+          box.classList.add('clicked');
+        });
+      });
   </body>
 </html>
